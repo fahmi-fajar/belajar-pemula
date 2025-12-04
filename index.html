@@ -14,42 +14,81 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-image: linear-gradient(to right,#604eff,#00d9ffab);
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
             position: fixed;
             z-index: 1000;
             right: 0;
             top: 0;
             left: 0;
+            
         }
         header{
             color: #fff;
             font-size: 20px;
-            padding: 15px;
-
+            display: flex;
+            align-items: center;
+            font-family: serif;
+            font-size: 30px;
+            margin-left: 30px;
         }
-        ul li a{
+        header img{
+            width: 40px;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
+        .nav-link{
             color: rgb(255, 255, 255);
             text-decoration: none;
+            font-family: serif;
+            font-size: 25px;
+            margin-right: 30px;
         }
-        .navlink{
+        .nav-link:hover{
+            color: #604eff;
+            transition: 0.3s;
+        }
+        .nav{
             display: flex;
             list-style: none;
             gap: 15px;
             padding: 15px;
         }
+        section{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .kotak{
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        .kotak:hover{
+            background-image: linear-gradient(to right,#00d9ff,#604eff);
+        }
+        .kotak1{
+            text-align: center;
+            font-size: 15px;
+        }
+        .div{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
         body{
             font-family: serif;
-        }
-        ul li a:hover{
-            color: #fff;
-            cursor: pointer;
-            background-color: #1900ff;
-            border-radius: 10px;
-            padding: 5px;
+            text-align: center;
         }
         footer{
             align-items: center;
-            background-image: linear-gradient(to right,#604eff,#00d9ffab);
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
             padding: 15px;
             text-align: center;
             position: fixed;
@@ -63,48 +102,72 @@
 </head>
 <body>
     <nav>
-        <header>smk al-mujtamak</header>
-        <ul class="navlink">
-            <li><a href="index.html">beranda</a></li>
-            <li><a href="jurusan.html">jurusan</a></li>
-            <li><a href="inpo.html">info</a></li>
-            <li><a href="profil.html">profil</a></li>
+        
+        <header>
+            <img src="Copy of Logo Design Template.jpg" alt="">
+            SMK AL-MUJTAMA'
+        </header>
+        <ul class="nav">
+            <li><a class="nav-link" href="index.html">beranda</a></li>
+            <li><a class="nav-link" href="jurusan.html">jurusan</a></li>
+            <li><a class="nav-link" href="inpo.html">info</a></li>
+            <li><a class="nav-link" href="profil.html">profil</a></li>
         </ul>
     </nav>
-    <main style="margin-top: 50px;">
+    <main style="margin-top: 60px;margin-bottom: 60px;">
         <article>
             <h1>belajar elemen semantik🥱🥱🥱</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore ipsam ea eum eveniet? Voluptatum optio tempore ea esse necessitatibus quos harum dolore unde asperiores, eveniet accusantium ex voluptatem modi?</p>
         </article>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>no.</th>
-                    <th>nama</th>
-                    <th>alamat</th>
-                    <th>cita-cita</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>fahmi</td>
-                    <td>proppo city</td>
-                    <td>hacker</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>fajar</td>
-                    <td>bandungan</td>
-                    <td>peretas</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <div class="kotak">
+                <div class="kotak1">
+                    <h1>color</h1>
+                    <p>Properti ini digunakan untuk menentukan warna teks</p>
+                    <br>
+                    <p>Contoh: color: blue; atau color: #ff5733;</p>
+                    <br>
+                    <p>Fungsinya Mengubah warna huruf dan simbol yang ada di dalam elemen tersebut.</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <div class="kotak1">
+                    <h1>font-size</h1>
+                    <p>Properti ini menentukan ukuran teks di dalam suatu elemen.</p>
+                    <br>
+                    <p>Contoh: font-size: 16px; atau font-size: 1.2em;</p>
+                    <br>
+                    <p>Fungsi: Mengontrol seberapa besar teks akan ditampilkan. Nilainya dapat berupa piksel (px), ukuran relatif seperti em atau rem, atau persentase.</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <div class="kotak1">
+                    <h1>background-color</h1>
+                    <p>Properti ini mengatur warna latar belakang (background) dari suatu elemen.</p>
+                    <br>
+                    <p>Contoh: background-color: #f0f0f0; atau background-color: rgba(255, 0, 0, 0.5);</p>
+                    <br>
+                    <p>Fungsi: Memberikan warna pada area di belakang konten, padding, dan border elemen tersebut.</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <div class="kotak1">
+                    <h1>padding</h1>
+                    <p>Properti ini mengatur ruang di dalam (internal space) elemen, antara konten (teks, gambar) dan border elemen tersebut.</p>
+                    <br>
+                    <p>Contoh: padding: 10px; (padding 10px di semua sisi) atau padding: 5px 15px; (5px atas/bawah, 15px kiri/kanan).</p>
+                    <br>
+                    <p>Fungsi: Memberikan "bantalan" di sekitar konten. Properti ini adalah bagian dari Model Kotak CSS (CSS Box Model).</p>
+                </div>
+            </div>
+        </section>
+        <div class="div">
         <figure>
             <img src="Screenshot (13).png" width="600">
             <figcaption>belajar figcaption</figcaption>
         </figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sMF7h_AWfh8?si=iLgJlz7SSXRhpZUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy;hak cipta di lindungi oleh negara|<a href="#">you tube</a>|<a href="#">tiktok</a>|<a href="#">instagram</a></p>
