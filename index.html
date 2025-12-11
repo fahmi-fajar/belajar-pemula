@@ -11,6 +11,7 @@
         box-sizing: border-box;
     }
     nav{
+        padding: 5px;
         background-image: linear-gradient(to right,#0dda18,#dfe20f);
         display: flex;
         justify-content: space-between;
@@ -33,9 +34,16 @@
 
     }
     header{
-        padding: 15px;
         font-size: 20px;
         color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
     }
     body{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -59,7 +67,6 @@
         z-index: 1000;
     }
     section{
-         position: fixed;
         display: flex;
         gap: 30px;
         justify-content: center;
@@ -87,11 +94,23 @@
     figcaption{
         padding-bottom: 30px;
     }
+    @media screen and (max-width:600px) {
+        section{
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        .navlink{
+            display: none;
+        }
+    }
 </style>
 </head>
 <body>
     <nav>
-    <header>SMP AL-MAMUBAROK 😚😙🤩 </header>
+    <header>
+        <img src="logo.jpg" alt="">
+        SMP AL-MAMUBAROK 😚😙🤩 </header>
         <ul class="navlink">
             <li><a href="index.html">beranda</a></li>
             <li><a href="Jelajahi.html">jelajahi</a></li>
