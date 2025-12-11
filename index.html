@@ -99,13 +99,28 @@
             bottom: 0;
             left: 0;
             z-index: 1000;
-            
+        }
+        @media screen and (max-width:600px) {
+            header{
+                font-size: 25px;
+                margin-left: 0px;
+                padding: 5px;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+            }
+            figure img{
+                width: 400px;
+            }
+            .nav{
+                display: none;
+            }
         }
 </style>
 </head>
 <body>
-    <nav>
-        
+    <nav> 
         <header>
             <img src="logo.jpg" alt="">
             SMK AL-MUJTAMA'
