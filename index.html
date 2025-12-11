@@ -3,171 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>beranda</title>
-    <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    nav{
-        background-image: linear-gradient(to right,#0dda18,#dfe20f);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position:  fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1000;
-    }
-    ul li a{
-        color: #fff;
-        text-decoration: none;
-    }
-    .navlink{
-        display: flex;
-        list-style: none;
-        gap: 15px;
-        padding: 15px;
-
-    }
-    header{
-        padding: 15px;
-        font-size: 20px;
-        color: #fff;
-    }
-    body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    ul li a:hover{
-        cursor: pointer;
-        color: #f2f3f2;
-        background-color: #0dda18;
-        padding: 5px;
-        border-radius: 10px;
-    }
-    footer{
-        background-image: linear-gradient(to right,#0dda18,#dfe20f);
-        text-align: center;
-        align-items: center;
-        padding: 15px;
-        position:  fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: 1000;
-    }
-    section{
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        margin: 30px;
-        
-    }
-    .kotak{
-        width: 300px;
-        height: 200px;
-        background-image: linear-gradient(to right,#0dda18,#dfe20f);
-        border-radius: 20px;
-    }
-    .kotak:hover{
-        background-image: linear-gradient(to right,#dfe20f,#0dda18);
-        width: 301px;
-        height: 301px;
-        transition: 1s;
-        color: #fff;
-    }
-    .kotak1{
-        text-align: center;
-        
-    }
-    figcaption{
-        padding-bottom: 30px;
-    }
+    <title>info</title>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
+            position: fixed;
+            z-index: 1000;
+            right: 0;
+            top: 0;
+            left: 0;
+            
+        }
+        header{
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            font-family: serif;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        header img{
+            width: 40px;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
+        .nav-link{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-family: serif;
+            font-size: 25px;
+            margin-right: 30px;
+        }
+        .nav-link:hover{
+            color: #604eff;
+            transition: 0.3s;
+        }
+        .nav{
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            padding: 15px;
+        }
+        section{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .kotak{
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        .kotak:hover{
+            background-image: linear-gradient(to right,#00d9ff,#604eff);
+        }
+        .kotak1{
+            text-align: center;
+            font-size: 15px;
+        }
+        .div{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            font-family: serif;
+            text-align: center;
+        }
+        footer{
+            align-items: center;
+            background-image: linear-gradient(to right,#604eff,#00d9ff);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            
+        }
 </style>
 </head>
 <body>
     <nav>
-    <header>SMP AL-MAMUBAROK 😚😙🤩 </header>
-        <ul class="navlink">
-            <li><a href="index.html">beranda</a></li>
-            <li><a href="Jelajahi.html">jelajahi</a></li>
-            <li><a href="Foryou.html">foryou</a></li>
-            <li><a href="Profil.html">profil</a></li>
-            <li><a href="buat akun.html">buat akun</a></li>
-           
+        
+        <header>
+            <img src="Copy of Logo Design Template.jpg" alt="">
+            SMK AL-MUJTAMA'
+        </header>
+        <ul class="nav">
+            <li><a class="nav-link" href="index.html">beranda</a></li>
+            <li><a class="nav-link" href="jurusan.html">jurusan</a></li>
+            <li><a class="nav-link" href="inpo.html">info</a></li>
+            <li><a class="nav-link" href="profil.html">profil</a></li>
         </ul>
     </nav>
-    <main style="margin-top: 70px; margin-bottom: 70px;">
-        <section>
-            <div class="kotak">
-                <div class="kotak1">
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </div>
-            <div class="kotak">
-                <div class="kotak1">
-                    <h1>Prestasi</h1>
-                    <p></p>
-                </div>
-            </div>
-            <div class="kotak">
-                <div class="kotak1">
-                    <h1>Kegiatan Wajib</h1>
-                </div>
-            </div>
-            <div class="kotak">
-                <div class="kotak1">
-                    <h1>Profil pp.al-mujtama'</h1>
-                </div>
-            </div>
-        </section>
-        <h1>DATA SEMUA SISWA</h1>
-        <table border="1" widht: 500;>
-            <thead>
-                <tr>
-                    <th>NO.</th>
-                    <th>NAMA LENGKAP</th>
-                    <th>ALAMAT</th>
-                    <th>JURUSAN</th>
-                    <th>HOBI</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Moh Fajrur Rohman</td>
-                    <td>waru barat</td>
-                    <td>pplg</td>
-                    <td>ngoding</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>fahmi </td>
-                    <td>bengi' city</td>
-                    <td>pplg</td>
-                    <td>nyabu</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>faris mr.bean</td>
-                    <td>inggris </td>
-                    <td>pplg</td>
-                    <td>dedep</td>
-                </tr>
-            </tbody>
-        </table>
-        <figure>
-            <img src="Screenshot (20).png" width="500">
-            <figcaption>gambar dunia digital</figcaption>
-            </img>
-        </figure>
-        
-    </main>
+    <main style="margin-top: 60px;margin-bottom: 60px;">
+        <article>
+            <h1>ini adalah halaman info 😝😝😝</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore ipsam ea eum eveniet? Voluptatum optio tempore ea esse necessitatibus quos harum dolore unde asperiores, eveniet accusantium ex voluptatem modi?</p>
+        </article>
     <footer>
-        <p>&copy; jagalah fasilitas ini!|<a href="">akun ML</a>|<a href="">fecebook</a>|<a href="">samehadaku</a></p>
+        <p>&copy;hak cipta di lindungi oleh negara|<a href="#">you tube</a>|<a href="#">tiktok</a>|<a href="#">instagram</a></p>
     </footer>
-</body>
 </html>
